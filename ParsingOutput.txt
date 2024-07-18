@@ -1,0 +1,27 @@
+The Symbol Table
+[Var=x][Mem=0][Line=6][Line=7][Line=10][Line=11][Line=11][Line=12]
+[Var=fact][Mem=1][Line=8][Line=10][Line=10][Line=13]
+------------------------------------------------------------
+The Syntax Tree
+[Read][x]
+[If]
+   [Oper][LessThan][Boolean]
+      [Num][0][Integer]
+      [ID][x][Integer]
+   [Assign][fact][Integer]
+      [Num][1][Integer]
+   [Repeat]
+      [Assign][fact][Integer]
+         [Oper][Times][Integer]
+            [ID][fact][Integer]
+            [ID][x][Integer]
+      [Assign][x][Integer]
+         [Oper][Minus][Integer]
+            [ID][x][Integer]
+            [Num][1][Integer]
+      [Oper][Equal][Boolean]
+         [ID][x][Integer]
+         [Num][0][Integer]
+   [Write]
+      [ID][fact][Integer]
+------------------------------------------------------------
